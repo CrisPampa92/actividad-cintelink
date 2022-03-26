@@ -32,7 +32,12 @@
               name="password"
               placeholder="Contraseña"
               required
-              :state="errorPassword ? !true : null"
+              :state="$v.password.$dirty || errorPassword ? !true : null"
+              :title="
+                $v.password.$dirty
+                  ? 'La contraseña debe tener al menos 8 caracteres'
+                  : null
+              "
             />
             <div class="form-error">
               <span
@@ -81,6 +86,9 @@ export default {
     user: {
       minLength: minLength(3),
       maxLength: maxLength(20),
+    },
+    password: {
+      minLength: minLength(8),
     },
   },
   methods: {
