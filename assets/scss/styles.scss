@@ -1,0 +1,68 @@
+.login-page {
+  background: url("/images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+.col-form-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.form-card {
+  background-color: #fff;
+  border-radius: 1rem;
+  width: 311px;
+}
+.form-control {
+  width: 274px;
+  height: 42px;
+  background-color: #e5e5e5;
+  border-radius: 0.5rem;
+  font-size: 12px;
+}
+.form-error {
+  height: 15px;
+  font-size: 10px;
+  color: red;
+  margin: 5px 0px 5px 0px;
+}
+.form-control.is-valid {
+  border: 1px solid #ced4da;
+  background-image: none;
+}
+.form-control:focus {
+  border-color: #ced4da !important;
+  box-shadow: none;
+}
+.btn-info {
+  width: 50%;
+  border-radius: 2rem;
+  font-size: 12px;
+  background-color: #2d9cdb;
+  text-transform: uppercase;
+  width: 104px;
+  height: 34px;
+}
+.btn-link {
+  font-size: 12px;
+  padding: 0 !important;
+}
+.btn-link:hover {
+  text-decoration: none;
+}
+.btn-create {
+  color: #000000;
+}
+@media screen and (max-width: 768px) {
+  .form-card {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    align-items: center;
+  }
+}
